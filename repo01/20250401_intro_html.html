@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤ Intro a HTML</title>
+
+    <!-- 
+        <style>
+            body {
+                background-color: #1f1f1f;
+                color: #ccc;
+                font-family: sans-serif;
+            }
+            
+            a {
+                color: chocolate;
+            }
+            
+            section {
+                background-color: rgb(56, 56, 56);
+                color: rgb(207, 0, 21);
+            }
+            
+            article {
+                background-color: rgb(226, 226, 226);
+            }
+        </style>
+        -->
+</head>
+
+<body>
+    <!-- Esto es un comentario -->
+
+    <h1>Luis García Sánchez</h1> <!-- esto es un título de nivel 1 -->
+    <h2>Profe de Lenguajes de Marcas</h2>
+    <h3>Ingeniero Informático</h3>
+
+    <p>Plugin: Live Server</p>
+
+    <br><br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem corrupti beatae, nesciunt fugit dolores
+        quasi error officia, tenetur vel hic! Reprehenderit maiores sequi molestias labore pariatur nisi, libero
+        perspiciatis!</p>
+
+    <p>Esto es un enlace a la
+        <a href="https://www.uax.com/" target="_blank" rel="noopener">web de la UAX</a>
+    </p>
+
+    <a href="https://www.imdb.com/es-es/title/tt2861424/" target="_blank" rel="noopener">
+        <img src="assets/img/rick-and-morty-eyes.png" alt="Rick y Morty" width="200px">
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam laboriosam tempore delectus architecto?
+        Facilis doloremque sequi similique adipisci dicta incidunt aliquam! Nobis, beatae. Quis deleniti expedita
+        aspernatur fugit sapiente.
+    </a>
+
+    <img src="https://d2dkqamqz2k831.cloudfront.net/posts/338-1733217432633.jpg" alt="HTML vs CSS vs JS" width="250px">
+
+    <p>
+        <a href="assets/img/rick-and-morty-eyes.png">Ver imagen de Rick y Morty</a>
+    </p>
+
+    <p>
+        <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">HTML CheatSeet de Stanford</a>
+    </p>
+
+    <h2 id="listas">Listas</h2>
+    <h3>Lista desordenada</h3>
+    <ul>
+        <li>
+            <a href="https://www.uax.com/">Web de la UAX</a>
+        </li>
+        <li>Enlaces sobre Rick y Morty
+            <ol type="I" start="5">
+                <li>
+                    <a href="https://www.imdb.com/es-es/title/tt2861424/">Rick y Morty en IMBD</a>
+                </li>
+                <li>
+                    <a href="assets/img/rick-and-morty-eyes.png">Imagen de Rick y Morty</a>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr> <!-- Línea horizontal -->
+
+    <header>
+        <img id="logo" src="assets/img/bowser.png" alt="logotipo bowser">
+        <h1>Esto es un encabezado dentro de un header</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#listas">Listas</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Noticias de Rock -->
+    <section id="Rock">
+        <article>
+            <header>
+                <h1>Angelus Apatrida lanza nuevo disco</h1>
+                <h2>"Metal is live"</h2>
+                <figure>
+                    <img src="assets/img/angeluApatrida.jpg" alt="Foto del grupo de Angelus Apatrida">
+                    <figcaption>Componentes de Angelus Apatrida</figcaption>
+                </figure>
+            </header>
+            <main>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, rem, corporis nemo quasi mollitia
+                    optio libero eaque cum accusamus hic ullam dolores, debitis facilis maiores sint nostrum beatae
+                    minima odio!</p>
+
+                <a href="noticias/Angelus-Apatrida-lanza-nuevo-disco.html">Ver noticia completa</a>
+            </main>
+            <aside>
+                <h3>Noticias relacionadas</h3>
+                <ul>
+                    <li><a href="noticias/angelus-concierto.html">Concierto de Angelus Apatrida</a></li>
+                </ul>
+            </aside>
+        </article>
+
+        <article>
+            <header>
+                <h1>Concierto de Robe</h1>
+                <h2>Robe Iniesta en la sala Riviera</h2>
+                <figure>
+                    <img src="assets/img/robe.jpg" alt="Robe Iniesta en pleno concierto">
+                    <figcaption>Robe Iniesta en pleno concierto</figcaption>
+                </figure>
+            </header>
+            <main>
+                <p>Robe presentará su nuevo disco y su single con <mark>Leiva</mark>. Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Error aspernatur delectus vel odio labore expedita consectetur earum sit, nesciunt
+                    doloremque, libero ab consequuntur voluptates culpa velit quam maiores possimus magnam?</p>
+
+                <a href="noticias/Concierto-de-Robe-Iniesta.html">Ver noticia completa</a>
+            </main>
+            <aside>
+                <h3>Noticias relacionadas</h3>
+                <ul>
+                    <li><a href="noticias/nuevo-single-Robe-con-Leiva.html">Presentación del nuevo single Robe con
+                            Leiva</a></li>
+                </ul>
+
+                Días que faltan para el concierto de Robe <progress id="dias-concierto-robe" value="25" max="100">25
+                    días</progress> del día <time datetime="2025-05-03">3 de mayo de 2025</time>
+                <!-- Para el CV podemos utilizarlo para mostar el nivel de adquisición de habilidades en determinados temas -->
+            </aside>
+        </article>
+    </section>
+
+
+    <br><br><br><br><br>
+    <!-- ************************************************************************************************ -->
+    <!-- TABLAS -->
+    <!-- ************************************************************************************************ -->
+
+    <section id="tablas">
+        <h1>Tablas</h1>
+
+        <table border="1">
+            <thead>
+                <tr> <!-- Fila de encabezado de tabla -->
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Empresa</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr> <!-- Esto es una fila de la tabla -->
+                    <td>Pepe</td> <!-- Esto es una celda de la tabla -->
+                    <td>Gotera</td>
+                    <td>32</td>
+                    <td rowspan="3">Chapuzas a Domicilio S.L.</td> <!-- Expando o combino dos celdas de dos filas -->
+                </tr>
+                <tr>
+                    <td>Otilio</td>
+                    <td>García</td>
+                    <td>36</td>
+                    <!-- <td>Chapuzas a Domicilio S.L.</td> -->
+                </tr>
+                <tr>
+                    <td>Rompetechos</td>
+                    <td>Ibañez</td>
+                    <td>47</td>
+                    <!-- <td>Chapuzas a Domicilio S.L.</td> -->
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">3 personas</td>
+                    <!-- <td>2 apellidos</td> -->
+                    <td>Media de edad: 34 años</td>
+                    <td>1 Empresa</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+
+    <br><br><br><br><br>
+    <!-- ************************************************************************************************ -->
+    <!-- FORMULARIOS -->
+    <!-- ************************************************************************************************ -->
+
+    <form action="#" method="GET" id="miFormulario">
+        <!-- 
+            action: dónde va la información. Quién, o más bien qué, se encarga de gestionar la información recogida por el formulario 
+
+            method: qué método se utiliza para enviar la información. 
+                GET: la información SE ENVÍA A TRAVÉS DE LA URL. Se utiliza para enviar información NO SENSIBLE y que NO OCUPA MUCHO ESPACIO.
+                    Por ejemplo, para enviar un nombre de usuario y una edad. La URL quedaría así:
+                    http://127.0.0.1:5500/20250401_intro_html.html?nombre-usuario=Pepe&edad-usuario=27#
+
+
+                POST: la información SE ENVÍA A TRAVÉS DEL CUERPO DEL MENSAJE. Se utiliza para enviar información SENSIBLE y/o que OCUPA MUCHO ESPACIO. También se utiliza para enviar ficheros. 
+                -->
+        <div class="campo">
+            <label for="nombre">Nombre<span class="requerido" style="color:red">*</span>:</label>
+            <input id="nombre" name="nombre-usuario" type="text" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="contrasenia">Contraseña:</label>
+            <input id="contrasenia" name="contrasenia-usuario" type="password" placeholder="Escribe tu contraseña">
+        </div>
+
+        <div class="campo">
+            <label for="edad">Edad: </label>
+            <input id="edad" name="edad-usuario" type="number" min="0" max="120" value="5">
+        </div>
+
+        <div class="campo">
+            Sexo: 
+            <input type="radio" id="hombre" name="sexo-usuario" value="hombre" checked>
+            <label for="hombre">Hombre </label>
+
+            <input type="radio" id="mujer" name="sexo-usuario" value="mujer">
+            <label for="mujer">Mujer</label>
+        </div>
+
+        <div class="campo">
+            <label for="fecha">Fecha: </label>
+            <input id="fecha" name="fechas" type="date">
+        </div>
+
+        <div class="campo">
+            Quieres que te toque la lotería?: 
+            <input type="radio" id="loteria-si" name="sexo-usuario" value="hombre" checked>
+            <label for="hombre">Sí </label>
+
+            <input type="radio" id="mujer" name="sexo-usuario" value="mujer">
+            <label for="mujer">No</label>
+        </div>
+
+        <div class="campo">
+            <label for="comentario">Comentario: </label>
+            <textarea id="comentario" name="comentarios"></textarea>
+        </div>
+
+        <div class="campo">
+            <label for="seleccion">Selecciona un estilo de música: </label>
+            <select id="seleccion" name="estilo-musica">
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="rap">Rap</option>
+                <option value="reggaeton">Reggaeton</option>
+                <option value="clásica">Clásica</option>
+                <option value="jazz">Jazz</option>
+                <option value="blues">Blues</option>
+                <option value="country">Country</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <input type="checkbox" id="condiciones" name="aceptar-condiciones" value="aceptar-condiciones" required>
+            <label for="condiciones">Acepto las condiciones de tratamiento de datos</label>
+        </div>
+
+
+
+        <div class="campo">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section id="enlaces-interes">
+        <h2>Enlaces de interés</h2>
+        <ul>
+            <li><a href="keepcoding.io/blog/atributo-noreferrer-en-html/#%C2%BFPor_que_usar_rel%C2%BBnoreferrer%C2%BB">Las
+                    funciones del atributo noreferrer en HTML </a></li>
+            <li><a href="https://caniuse.com/">Can I use</a></li>
+        </ul>
+    </section>
+
+    <!-- FOOTER O PIE DE DOCUMENTO O SECCIÓN -->
+    <footer>
+        <p>Esto es un pie de página</p>
+        <p>2024 &copy; Luis García Sánchez</p>
+        <p><a href="https://www.uax.com/">Web de la UAX</a></p>
+        <p>
+        <address>Avenida Universidad, 1, 28691 Villanueva de la Cañada, Madrid</address>
+        </p>
+    </footer>
+
+</body>
+
+</html>

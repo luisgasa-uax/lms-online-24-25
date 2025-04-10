@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a HTML ❤</title>
+    <!-- Esto es un comentario -->
+
+    <style>
+        article {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px auto;
+            width: 70%;
+        }
+        article img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h6>Encabezado 6</h6>
+
+    <p>Esto es un párrafo</p>
+    <p>Esto es otro párrafo</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque cumque, enim, tempore corrupti illum
+        omnis quaerat fugiat perspiciatis ea molestiae animi. Distinctio adipisci quaerat debitis odit in voluptas
+        dignissimos?</p>
+
+    <a href="https://github.com/luisgasa-uax/lms-online-24-25">
+        Enlace al repositorio de GitHub
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://www.uax.es">Web de UAX FP/Xtart</a>
+
+
+    <img src="https://i.blogs.es/8b8798/06-06-matrix/1366_521.jpg" alt="Banner de la película Matrix" width="300">
+
+    <img src="assets/img/interstellar.webp" alt="Poster de la película Interstellar" height="150">
+
+    <img src="./assets/img/interstellar.webp" alt="Otro Poster de la película Interstellar">
+
+    <!-- Evitar este sistema 
+     <img src="/assets/img/interstellar.webp" alt="">
+    -->
+
+    <!-- Este tipo de ruta no debemos utilizarla nunca
+    <img src="Q:\Dropbox\UAX_FP_25\LMS\ONLINE\repo02\assets\img\interstellar.webp" alt="">
+    -->
+
+    <ul>
+        <li>Elemento 1
+            <ul>
+                <li>Elemento 1.1</li>
+                <li>Elemento 1.2
+                    <ol>
+                        <li>Elemento 1.2.1</li>
+                        <li>Elemento 1.2.2</li>
+                        <li>Elemento 1.2.3</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Elemento 1.1</li>
+        <li>
+            Link a la
+            <a href="https://www.imdb.com/es-es/title/tt0816692/" target="_blank" rel="noopener noreferrer">
+                ficha de Interstellar
+            </a>
+        </li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <ol type="I" start="7">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+    <br><br><br>
+
+    <header>
+        <!-- Encabezado -->
+        <h1>Esto es un encabezado dentro de un header</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenido principal -->
+        <section id="futbol">
+            <h2>La Liga</h2>
+            <p>Últimas noticias sobre la Liga de Fútbol española</p>
+
+            <article>
+                <figure>
+                    <img src="./assets/img/betis.avif" alt="Foto de jugadores del Real Betis">
+                    <figcaption>Jugadores del Real Betis celebrando el título</figcaption>
+                </figure>
+                <h3>Er Betis gana la Liga</h3>
+                <p>El Real Madrid se ha quedado llorando lágrimas verdes.</p>
+                
+                <aside>
+                    <!-- contenido adccional -->
+                     <a href="https://www.diariodesevilla.es/realbetis/hay-fecha-renovacion-marc-bartra-betis-laliga_0_2003642480.html">Ya hay posible fecha para la renovación de Marc Bartra con el Betis</a>
+                </aside>
+            </article>
+
+            <article>
+                <h3>El Barcelona se queda fuera de la Champions</h3>
+                <p>El FC Barcelona no ha conseguido clasificarse para la próxima edición de la Champions League.</p>
+            </article>
+        </section>
+
+        <section id="baloncesto">
+            <h2>NBA</h2>
+            <p>Últimas noticias sobre la NBA</p>
+
+            <article>
+                <figure>
+                    <img src="https://blog.logomyway.com/wp-content/uploads/2017/01/Jerry-West-nba-logo-1-1.jpg" alt="Foto de jugadores de la NBA">
+                    <figcaption>Jugadores de la NBA celebrando el título</figcaption>
+                </figure>
+                <h3>Los Lakers ganan el campeonato</h3>
+                <p>Los Lakers han ganado el campeonato de la NBA.</p>
+            </article>
+
+            <article>
+                <h3>Los Warriors se quedan fuera de los playoffs</h3>
+                <p>Los Golden State Warriors no han conseguido clasificarse para los playoffs.</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Intro a HTML</p>
+        <address>13 Rúe del Percebe, 3º A</address>
+    </footer>
+
+</body>
+
+</html>
