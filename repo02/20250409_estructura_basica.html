@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/estilos.css" type="text/css">
+
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="assets/img/logo.jpg" alt="Logo paleta ">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#clasica">Clasica</a></li>
+                <li><a href="#moderno">Moderno</a></li>
+                <li><a href="#digital">Digital</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Tu sitio de arte</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="clasica" class="obras">
+            <h2>Arte clásico</h2>
+
+            <article class="obra">
+                <img src="assets/img/The-Persistence-of-Memory.jpg" alt="La persistencia de la Memoria">
+                <h3>La persistencia de la Memoria</h3>
+                <p>Autor: <mark>Salvador</mark> Dalí</p>
+                <p>Fecha: <time datetime="1931">1931</time></p>
+                <a href="obras/The-Persistence-of-Memory.html">Ver ficha de la obra</a>
+            </article>
+
+            
+            <article class="obra">
+                <img src="assets/img/gioconda.jpg" alt="La Gioconda">
+                <h3>La Gioconda</h3>
+                <p>Autor: Leonardo Da Vinci</p>
+                <p>Fecha: <time datetime="1503">1503</time></p>
+                <a href="obras/La-Gioconda.html">Ver ficha de la obra</a>
+            </article>
+
+            <aside>
+                <h3>Otras obras</h3>
+                <ul>
+                    <li><a href="jardin-delicias.html">El jardión de las delicias - El Bosco</a></li>
+                    <li><a href="san-jeronimo.html">San Jerónimo escribiendo - Caravaggio</a></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="moderno" class="obras">
+            <h2>Arte moderno</h2>
+            <article class="obra">
+                <img src="assets/img/siria.jpg" alt="Siria">
+                <h3>Siria</h3>
+                <p>Autora: Ele Pozas (Elena García Sánchez)</p>
+                <p>Fecha: <time datetime="2023">2005</time></p>
+                <a href="obras/Siria.html">Ver ficha de la obra</a>
+            </article>
+            
+            <article class="obra">
+                <img src="assets/img/la-ventana.jpg" alt="La ventana">
+                <h3>La ventana</h3>
+                <p>Autor: Juan Gris</p>
+                <p>Fecha: <time datetime="1916">1916</time></p>
+                <a href="obras/La-ventana.html">Ver ficha de la obra</a>
+            </article>
+        </section>
+
+        <section id="digital" class="obras">
+            
+        </section>
+
+        <section id="pinacoteca">
+            <h2>Nuestra pinacoteca</h2>
+            <p>En nuestra pinacoteca podrás encontrar una selección de obras de arte clásico, moderno y digital.</p>
+            <p>Estado de la colección <progress value="75" max="300" style="background-color: magenta;">21/300</progress> 21 obras del objetivo de 300 obras en total.</p>
+
+            <br>
+            <h3>Listado de Obras</h3>
+
+
+            <table border="1"> <!-- tabla -->
+                <thead> <!-- encabezado de la tabla -->
+                    <tr> <!-- fila -->
+                        <th>    <!-- celda -->
+                            Obra
+                        </th>
+                        <th>
+                            Autor
+                        </th>
+                        <th>Alias autor</th>
+                    </tr>
+                </thead>
+
+                <tbody> <!-- cuerpo de la tabla -->
+                    <tr>
+                        <td>
+                            La persistencia de la memoria
+                        </td>
+                        <td>
+                            Salvador Dalí
+                        </td>
+                        <td>Dalí</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            La Gioconda
+                        </td>
+                        <td>
+                            Leonardo Da Vinci
+                        </td>
+                        <td>Da Vinci</td>
+                    </tr>
+                    <tr>
+                        <td>El jardín de las delicias</td>
+                        <td rowspan="2">El Bosco</td>
+                        <td rowspan="2">The One</td> 
+                    </tr>
+                    <tr>
+                        <td>La muerte de un avaro</td>
+                        <!-- <td>El Bosco</td> no la necesito por que la fila de arriba se ha expandido hasta aquí -->
+                    </tr>
+
+                    <tr>
+                        <td>San Jerónimo escribiendo</td>
+                        <td>Caravaggio</td>
+                        <td>Caravaggio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Siria</td>
+                        <td>Ele Pozas</td>
+                        <td>Ele</td>
+                    </tr>
+
+                    <tr>
+                        <td>La ventana</td>
+                        <td>Juan Gris</td>
+                        <td>Gris</td>
+                    </tr>
+                </tbody>
+
+                <tfoot> <!-- pie de la tabla -->
+                    <tr> 
+                        <td>
+                            Total de obras: 21
+                        </td>
+                        <td colspan="2"> <!-- colspan hace que la celda ocupe dos columnas -->
+                            Total de autores: 15
+                        </td>
+                        <!-- 
+                        <td>
+                            Total de alias: 10
+                        </td> 
+                        -->
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <!-- formulario de contacto -->
+            <h2>Contacto</h2>
+
+            <form action="#" method="get">
+                <label for="nombre">Nombre *: </label>
+                <input id="nombre" name="nombre-contacto" type="text" required maxlength="125">
+                
+                <br><br>
+                
+                <label for="email">Email *: </label>
+                <input id="email" name="email" type="email">
+
+                <br><br>
+
+                <label>Contraseña: 
+                    <input type="password" name="password" placeholder="Escribe tu contraseña">
+                </label>
+
+                <br><br>
+                <label for="estilo">Estilo de arte preferido:</label>
+                <select name="estilo" id="estilo">
+                    <option value="clasico">Clásico</option>
+                    <option value="moderno">Moderno</option>
+                    <option value="digital">Digital</option>
+                </select>
+
+                <br><br>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <label><!-- Sexo: -->
+                        <input type="radio" name="sexo" id="sexo-hombre" value="hombre" checked> Hombre
+                        <br>
+                        <input type="radio" name="sexo" id="sexo-mujer" value="mujer"> Mujer
+                        <br>
+                        <input type="radio" name="sexo" id="sexo-otro" value="otro"> Otro
+                    </label>
+                </fieldset>
+
+                <br><br>
+
+                <label>Escribe tus comentarios
+                    <textarea name="comentarios" id=""></textarea>
+                </label>
+
+                <br></br>
+
+                <label><input type="checkbox" name="condiciones" id="condiciones" required> Acepto la política de privacidad</label>
+
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <!--             
+            http://127.0.0.1:5500/20250409_estructura_basica.html?nombre-contacto=Diego#
+
+            http://127.0.0.1:5500/20250409_estructura_basica.html?nombre-contacto=Diego&email=dvelazquez%40myuax.com# 
+            -->
+
+
+        </section>
+    </main>
+
+    <br><br><br><br><br>
+    
+</body>
+</html>
